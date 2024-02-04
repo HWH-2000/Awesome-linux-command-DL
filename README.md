@@ -6,11 +6,20 @@ Record the basic linux command for DL
 查看服务器配置信息：neofetch  
 
 ## conda env
-激活环境：source activate env_name
+创建环境：conda create -n env_name python=3.9   
+激活环境：source activate env_name   
+退出环境：conda deactivate env_name     
+删除环境：conda remove -n env_name --all     
+克隆环境：conda create -n new_env_name --clone old_env_name    
+重命名环境（只能先clone环境，再删除old name环境）   
+列出所有环境：conda env list       
+列出当前环境所有包：conda list     
+导出环境配置：conda env export > environment.yml      
+根据环境配置创建环境：conda env create -f environment.yml      
 
 ## GPU 
 查看GPU资源： nvidia-smi  
-查看nvidia显卡利用率，显存占用和算力情况：watch -n 0.5 nvidia-smi      #0.5秒更新一次显卡利用情况，并查看NVIDIA驱动版本  
+查看nvidia显卡利用率，显存占用和算力情况：watch -n 0.5 nvidia-smi         #0.5秒更新一次显卡利用情况，并查看NVIDIA驱动版本  
 
 ## DeepLearning 
 查看python端口：ps -ef |grep python  
