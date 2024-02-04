@@ -15,8 +15,9 @@ Record the basic linux command for DL
 ## DeepLearning 
 查看python端口：ps -ef |grep python  
 中止进程：kill -9 pid  
-后台运行命令：nohup python -u train.py &
-后台运行sh文件：nohup  ./run.sh &  
+后台运行命令：nohup python -u train.py &     
+后台运行sh文件：nohup  ./run.sh &       
+后台运行sh文件，并生成日志文件：nohup ./run.sh >log  2>&1 &
 
 ## file system
 查看文件或者文件夹大小命令：du xxx(文件夹名称)         #注意，要在上层文件夹进行操作  
