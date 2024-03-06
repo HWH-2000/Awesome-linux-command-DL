@@ -1,4 +1,4 @@
-# linux-command-for-DeepLearning
+# Awesome-linux-command-for-DeepLearning
 Record the basic linux command for DL 
 
 ## server use
